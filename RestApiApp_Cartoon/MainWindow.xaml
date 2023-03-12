@@ -1,0 +1,27 @@
+﻿<Window x:Class="RestApiApp_Cartoon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestApiApp_Cartoon"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image  Margin="15" Name="image"/>
+        <Button Click="Button_Click" Content="connect" Width="100" Height="20" HorizontalAlignment="Right" Margin="15" VerticalAlignment="Bottom" Grid.Column="1"/>
+        <Button Click="ButtonCount_Click" Content="Count" Width="100" Height="20" HorizontalAlignment="Left" Margin="15" VerticalAlignment="Bottom" Grid.Column="1"/>
+        
+        <StackPanel Grid.Column="1">
+            <Label Name="lblName" Content="Name:"/>
+            <Label Name="lblId" Content="Id:"/>
+            <TextBox Name="txtBoxId"  Margin="5"   Height="25"/>
+            <Label Name="lblLocationName" Content="Location Name:" />
+            <Label Name="lblSpecies" Content="Species:"/>
+            <Label Name="lblCount" Content="Count: "/>
+        </StackPanel>
+    </Grid>
+</Window>

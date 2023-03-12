@@ -1,0 +1,34 @@
+﻿<Window x:Class="RestApiApp_Comic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestApiApp_Comic"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            
+
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="15">
+            <Button Name="btnPrev" Width="100" Height="60" Content="PREV" Click="ButtonPrev_Click" Margin="5"/>
+            <Button Name="btnRandom" Width="100" Height="60" Content="RANDOM" Click="ButtonRandom_Click" Margin="5"/>
+
+            <TextBox Name="txtBox" FontSize="40" Width="100"/>
+            <Button Name="btnInput" Width="100" Height="60" Content="INPUT" Click="ButtonInput_Click" Margin="5"/>
+            <Button Name="btnNext" Width="100" Height="60" Content="NEXT" Click="ButtonNext_Click" Margin="5"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Margin="10">
+            <Label Name="lbl1" FontSize="26" Content="111"/>
+           
+            <Label Name="lbl2" FontSize="12" Content="111" VerticalAlignment="Center"/>
+            
+        </StackPanel>
+        <Image Grid.Row="1" Margin="15" Name="imageComic"/>
+
+    </Grid>
+</Window>
